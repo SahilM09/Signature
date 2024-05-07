@@ -181,7 +181,9 @@
                 ctx.drawImage(img, 0, 0);
             }
         });
-
+const canvasRect = canvas.getBoundingClientRect();
+lastX = event.touches[0].clientX - canvasRect.left;
+lastY = event.touches[0].clientY - canvasRect.top;
     </script>
 </body>
 
